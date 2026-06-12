@@ -7,9 +7,6 @@ import "./index.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import { registerSW } from "virtual:pwa-register";
-
-registerSW();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
