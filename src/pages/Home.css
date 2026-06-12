@@ -1,0 +1,160 @@
+/* DARK BACKGROUND */
+.home {
+  background: #0f0f17;
+  min-height: 100vh;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 40px;
+}
+
+/* HEADER */
+.top-header {
+  text-align: center;
+  padding: 25px 15px;
+  background: linear-gradient(135deg, #1c1c2b, #12121a);
+}
+
+/* BIG SEARCH BAR */
+.search-bar {
+  width: 90%;
+  max-width: 600px;
+  margin-top: 15px;
+  padding: 16px 20px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+
+  background: rgba(255,255,255,0.08);
+  color: white;
+  backdrop-filter: blur(15px);
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+
+  transition: 0.3s;
+}
+
+.search-bar:focus {
+  transform: scale(1.03);
+  background: rgba(255,255,255,0.12);
+}
+
+/* TITLE */
+.title {
+  margin: 20px;
+  font-size: 18px;
+}
+
+/* GRID */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  padding: 15px;
+}
+
+/* CARD */
+.recipe-card {
+  background: rgba(255,255,255,0.06);
+  border-radius: 18px;
+  overflow: hidden;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.3s;
+}
+
+.recipe-card:hover {
+  transform: translateY(-6px);
+}
+
+/* IMAGE */
+.recipe-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* BUTTONS */
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.btn-group button {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-group button:hover {
+  background: #ff4e50;
+  transform: scale(1.05);
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(20px);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.modal-box img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  opacity: 0.8;
+}
+.btn-group button:nth-child(3) {
+  background: #25d366;
+  color: white;
+}
+.recipe-detail img {
+  width: 220px;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+
+/* nutrition glass box */
+.nutrition-box {
+  background: rgba(255,255,255,0.08);
+  padding: 10px;
+  border-radius: 12px;
+  margin-top: 10px;
+  backdrop-filter: blur(10px);
+}
+
+/* steps styling */
+.steps-box {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.steps-box ol {
+  padding-left: 20px;
+}
+
+.steps-box li {
+  margin: 5px 0;
+}
